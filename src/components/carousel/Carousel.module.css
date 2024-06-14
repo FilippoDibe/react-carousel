@@ -1,0 +1,70 @@
+.carousel {
+    position: relative;
+    width: 600px;
+    margin:  auto;
+    overflow: hidden;
+  
+  }
+  
+  .carouselInner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Style for carousel buttons */
+  .carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .carouselButton.prev {
+    left: 10px;
+  }
+  
+  .carouselButton.next {
+    right: 10px;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .carouselBullets {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .carouselBullet {
+    cursor: pointer;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    border: none;
+    background-color: #bbb;
+    display: inline-block;
+  }
+  
+  .carouselBullet.active {
+    background-color: grey;
+  }
